@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="theme-color" content="#0a0a0a" />
+  <title>Morro da Live 🔥 | Baile Virtual</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+  <!-- Tela de início -->
+  <div id="start-screen">
+    <div class="logo-area">
+      <h1>MORRO DA LIVE</h1>
+      <p class="subtitle">ENTRETENIMENTO FICTÍCIO • JOGO DE BONECOS</p>
+      <p class="tag">Times e personagens de brincadeira • Sem vínculo político</p>
+    </div>
+
+    <div class="team-select">
+      <h2>ESCOLHE TEU TIME</h2>
+      <div class="teams-grid" id="teams-grid"></div>
+    </div>
+
+    <button id="btn-start" class="btn-primary" disabled>ENTRAR NO MORRO 🔥</button>
+    <p class="credits">Feito com ❤️ + Three.js | Mobile First</p>
+  </div>
+
+  <!-- HUD do jogo -->
+  <div id="hud" class="hidden">
+    <div class="top-bar">
+      <div class="live-badge">● AO VIVO</div>
+      <div class="title">MORRO DA LIVE</div>
+      <div class="players-count" id="players-count">169 no morro</div>
+    </div>
+
+    <div class="scoreboard">
+      <div class="team-score" id="score-left">
+        <span class="team-name">PALMEIRAS</span>
+        <span class="score" id="score-palmeiras">638</span>
+        <span class="comments">Comente flamengo · 47 pessoas</span>
+      </div>
+      <div class="vs">VS</div>
+      <div class="team-score" id="score-right">
+        <span class="team-name">FLAMENGO</span>
+        <span class="score" id="score-flamengo">2235</span>
+        <span class="comments">Comente palmeiras · 54 pessoas</span>
+      </div>
+    </div>
+
+    <div class="stage-title">BAILE DA LIVE</div>
+  </div>
+
+  <!-- Controles mobile -->
+  <div id="controls" class="hidden">
+    <div id="joystick-zone">
+      <div id="joystick-base">
+        <div id="joystick-knob"></div>
+      </div>
+    </div>
+    <div class="action-buttons">
+      <button id="btn-dance" class="action-btn">💃 DANÇAR</button>
+      <button id="btn-flag" class="action-btn">🏳️ BANDEIRA</button>
+      <button id="btn-emote" class="action-btn">🔥</button>
+    </div>
+  </div>
+
+  <!-- Chat fake -->
+  <div id="chat" class="hidden">
+    <div class="chat-messages" id="chat-messages"></div>
+  </div>
+
+  <div id="canvas-container"></div>
+
+  <script src="js/teams.js"></script>
+  <script src="js/game.js"></script>
+</body>
+</html>
