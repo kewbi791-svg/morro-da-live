@@ -1,4 +1,4 @@
-// Times disponíveis no Morro da Live
+// Times do Morro da Live - Volta Redonda / RJ
 const TEAMS = [
   {
     id: 'palmeiras',
@@ -7,7 +7,8 @@ const TEAMS = [
     primary: '#006437',
     secondary: '#ffffff',
     accent: '#00ff88',
-    initials: 'P'
+    initials: 'P',
+    logo: 'assets/escudos/palmeiras.png'
   },
   {
     id: 'flamengo',
@@ -16,7 +17,8 @@ const TEAMS = [
     primary: '#c41e3a',
     secondary: '#000000',
     accent: '#ff1744',
-    initials: 'CRF'
+    initials: 'CRF',
+    logo: 'assets/escudos/flamengo.png'
   },
   {
     id: 'saopaulo',
@@ -25,16 +27,18 @@ const TEAMS = [
     primary: '#ffffff',
     secondary: '#000000',
     accent: '#ff0000',
-    initials: 'SPFC'
+    initials: 'SPFC',
+    logo: 'assets/escudos/saopaulo.png'
   },
   {
-    id: 'cruzeiro',
-    name: 'Cruzeiro',
-    short: 'CRU',
+    id: 'cienciano',
+    name: 'Cienciano',
+    short: 'CIE',
     primary: '#003399',
     secondary: '#ffffff',
     accent: '#4fc3f7',
-    initials: 'C'
+    initials: 'C',
+    logo: 'assets/escudos/cienciano.png'
   },
   {
     id: 'independiente',
@@ -43,7 +47,8 @@ const TEAMS = [
     primary: '#e30613',
     secondary: '#ffffff',
     accent: '#ff5252',
-    initials: 'C.A.I.'
+    initials: 'C.A.I.',
+    logo: 'assets/escudos/independiente.png'
   },
   {
     id: 'river',
@@ -52,7 +57,8 @@ const TEAMS = [
     primary: '#ffffff',
     secondary: '#e30613',
     accent: '#ff1744',
-    initials: 'CARP'
+    initials: 'CARP',
+    logo: 'assets/escudos/river.png'
   },
   {
     id: 'boca',
@@ -61,7 +67,8 @@ const TEAMS = [
     primary: '#0033a0',
     secondary: '#ffd700',
     accent: '#ffc107',
-    initials: 'CABJ'
+    initials: 'CABJ',
+    logo: 'assets/escudos/boca.png'
   },
   {
     id: 'altamira',
@@ -70,28 +77,40 @@ const TEAMS = [
     primary: '#006400',
     secondary: '#ffffff',
     accent: '#00e676',
-    initials: 'A.E.C.'
+    initials: 'A.E.C.',
+    logo: 'assets/escudos/altamira.png'
   }
 ];
 
-// Mensagens fake de chat para atmosfera
+// Mensagens fake de chat
 const FAKE_CHAT = [
   { user: 'bia7772', text: 'kkkkkk', color: '#ff80ab' },
   { user: 'ju102', text: 'morro lotado 🔥', color: '#80d8ff' },
   { user: 'gui223', text: 'Palmeiras é o maior', color: '#00e676' },
   { user: 'nanda_oficial', text: 'Flamengo tá dominando', color: '#ff5252' },
   { user: 'caio_oficial4', text: 'Time 1', color: '#ffd740' },
-  { user: 'blazinho6', text: 'Time 1', color: '#69f0ae' },
-  { user: 'carol_rj3', text: '2', color: '#ea80fc' },
-  { user: 'marizinho35', text: '1', color: '#82b1ff' },
-  { user: 'vinizinho15', text: 'sobe o morro!!!', color: '#ffab40' },
-  { user: 'lari_br4', text: 'baile top', color: '#f48fb1' },
+  { user: 'blazinho6', text: 'Volta Redonda tá on fire', color: '#69f0ae' },
+  { user: 'carol_rj3', text: 'baile de VR 🔥', color: '#ea80fc' },
+  { user: 'marizinho35', text: 'sobe o morro!!!', color: '#82b1ff' },
+  { user: 'vinizinho15', text: 'Cienciano presente', color: '#ffab40' },
+  { user: 'lari_br4', text: 'baile top de Volta Redonda', color: '#f48fb1' },
   { user: 'neto_br1', text: 'MC Poze 🔥', color: '#80cbc4' },
   { user: 'rafa7772', text: 'quem tá ganhando?', color: '#ce93d8' },
   { user: 'manu103', text: 'Palmeiras 💚', color: '#00c853' },
   { user: 'dudu7739', text: 'Flamengo 🔴⚫', color: '#ff1744' },
   { user: 'gui_rj', text: 'dançando até o chão', color: '#ffd600' },
-  { user: 'ze222', text: 'morro em festa', color: '#40c4ff' },
+  { user: 'ze222', text: 'morro em festa - VR', color: '#40c4ff' },
   { user: 'pedrin223', text: 'bandeira no alto', color: '#ff6e40' },
-  { user: 'bia_live', text: 'ao vivo do morro', color: '#b388ff' }
+  { user: 'bia_live', text: 'ao vivo do morro de Volta Redonda', color: '#b388ff' },
+  { user: 'truco_vr', text: 'truco na mesa 🃏', color: '#ffd740' },
+  { user: 'sinuca_boy', text: 'tacando na sinuca', color: '#69f0ae' }
+];
+
+const SECRET_CHAT = [
+  { user: 'facção_01', text: 'VAMO MANO, AQUI É A FESTA!!!', color: '#ff1744' },
+  { user: 'balla_vr', text: '🔥🔥🔥 BOLA NA CARA', color: '#ff5252' },
+  { user: 'morro_secreto', text: '100 MIL NO MORRO PORRA', color: '#ffd600' },
+  { user: 'tiro_de_bola', text: 'VAMO QUE VAMO', color: '#00e676' },
+  { user: 'festa_louca', text: 'AQUI É VOLTA REDONDA CARAIO', color: '#ea80fc' },
+  { user: 'escudo_up', text: 'todos os times juntos 🔥', color: '#40c4ff' }
 ];

@@ -1,56 +1,36 @@
-# 🔥 Morro da Live
+# 🔥 Morro da Live – Volta Redonda / RJ
 
-**Jogo mobile de baile virtual** inspirado nas lives de "Morro da Live" / jogo de bone cos.
+Jogo mobile de baile virtual inspirado nas lives de "Morro da Live".
 
-Feito 100% com **HTML5 + CSS3 + Three.js + Vanilla JS**.  
-Otimizado para celular (touch + joystick virtual).
+**Local:** Volta Redonda - RJ  
+Feito 100% com HTML5 + CSS3 + Three.js + Vanilla JS.  
+Otimizado para celular.
 
-## 🎮 Como jogar
+## Como jogar
 
-1. Abra o `index.html` no celular ou desktop
-2. Escolha seu time
+1. Abra o `index.html`
+2. Escolha seu time (agora com **Cienciano** no lugar do Cruzeiro)
 3. Entre no morro
-4. Use o **joystick** para andar
-5. Botões:
-   - 💃 **Dançar**
-   - 🏳️ **Bandeira** (acenar)
-   - 🔥 **Emote** rápido
+4. Joystick para andar | 💃 Dançar | 🏳️ Bandeira | 🎵 Música
+5. **Segredo:** clique 7 vezes no título "MORRO DA LIVE" → aparece o botão **BAILE SECRETO**
 
-## ✨ Features
+## Features v2
 
-- Cena 3D completa de favela/morro
-- Avatares blocky estilo Roblox
-- 8 times (Palmeiras, Flamengo, São Paulo, Cruzeiro, Independiente, River, Boca, Altamira)
-- NPCs dançando e andando
-- Palco com luzes de festa
-- Scoreboard ao vivo (Palmeiras x Flamengo)
-- Chat fake com atmosfera de live
-- Controles touch + teclado
-- Mobile-first + PWA-ready
+- Escudos reais dos clubes nas bandeiras e seleção
+- Cienciano (o C com estrelas)
+- Cenas ambient: sinuca perto do banheiro, mesa de truco, crianças jogando pedra-papel-tesoura, casal no celular, cara fumando
+- Baile secreto: +80 NPCs, facção atirando bola, 100k+ pessoas, chat insano
+- Música (botão 🎵)
+- Animações melhoradas
+- Localização Volta Redonda - RJ
 
-## 📱 Rodar local
+## Rodar
 
-Só abrir o `index.html` no navegador (Chrome/Safari mobile recomendado).
-
-Ou usar um server simples:
-
+Abra `index.html` ou:
 ```bash
 npx serve .
-# ou
-python -m http.server 8080
 ```
 
-## 🛠️ Tecnologias
-
-- Three.js r128
-- CSS3 moderno (backdrop-filter, safe-area, etc)
-- Vanilla JS (sem frameworks)
-
-## 📌 Créditos
-
-Projeto feito por pedido do **senhor peixe morto** ☠️🥵  
-Entretenimento fictício • Times e personagens de brincadeira • Sem vínculo político
-
----
+Coloque os PNGs dos escudos em `assets/escudos/` (já incluídos no projeto local).
 
 **GitHub:** https://github.com/kewbi791-svg/morro-da-live
